@@ -1,9 +1,6 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+commit_message=$(head -1 "$1")
 
-commit_message=$(cat "$1")
-
-if ! grep -qE "^(feat|fix|chore|docs|style|refactor|test|build|ci|perf|revert)(\(.+\))?: .{1,10}" <<< "$commit_message"; then
+if ! echo "$commit_message" | grep -qE "^(feat|fix|chore|docs|style|refactor|test|build|ci|perf|revert)(\(.+\))?: .{1,100}$"; then
   echo "Invalid commit message format. Please use Conventional Commits format."
   echo "Examples:"
   echo "  feat(component): add new feature"
