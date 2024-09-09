@@ -5,6 +5,6 @@ if ! echo "$commit_message" | grep -qE "^(feat|fix|chore|docs|style|refactor|tes
   echo "Examples:"
   echo "  feat(component): add new feature"
   echo "  fix(component): fix a bug"
-  echo "  max character must be 10"
+  echo "  max character must be 100"
   exit 1
 fi
