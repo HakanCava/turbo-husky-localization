@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+commit_message=$(cat "$1")
+
+if ! grep -qE "^(feat|fix|chore|docs|style|refactor|test|build|ci|perf|revert)(\(.+\))?: .{1,10}" <<< "$commit_message"; then
+  echo "Invalid commit message format. Please use Conventional Commits format."
+  echo "Examples:"
+  echo "  feat(component): add new feature"
+  echo "  fix(component): fix a bug"
+  echo "  max character must be 10"
+  exit 1
+fi
