@@ -4,6 +4,11 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev:prj-1": "turbo dev --filter=project-1",
+    "dev:prj-2": "turbo dev --filter=project-2",
+    "start": "turbo start",
+    "start:prj-1": "turbo start --filter=project-1",
+    "start:prj-2": "turbo start --filter=project-2",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky"
@@ -23,6 +28,11 @@
     "packages/*"
   ],
   "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "framer-motion": "^11.5.6",
     "next-intl": "^3.19.1"
   }
 }
