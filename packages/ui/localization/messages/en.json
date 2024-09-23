@@ -7,10 +7,12 @@
   "HomePage": {
     "title": "Home"
   },
-  "LocaleSwitcher": {
+  "Navbar": {
     "tr": "Turkish",
     "en": "English",
-    "label": "Language"
+    "label": "Language",
+    "link-1": "HomePage",
+    "link-2": "ClientPage"
   },
   "LoginPage": {
     "credentials": "Credentials: jane@doe.com / next-intl",
@@ -25,5 +27,9 @@
   },
   "ProfilePage": {
     "title": "Profile"
+  },
+  "ClientPage": {
+    "count": "Count",
+    "increment": "Increase"
   }
 }

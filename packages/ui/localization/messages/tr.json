@@ -7,10 +7,12 @@
   "HomePage": {
     "title": "Anasayfa"
   },
-  "LocaleSwitcher": {
+  "Navbar": {
     "tr": "Türkçe",
     "en": "İngilizce",
-    "label": "Dil"
+    "label": "Dil",
+    "link-1": "Anasayfa",
+    "link-2": "ClientSayfa"
   },
   "LoginPage": {
     "credentials": "Kimlik Bilgileri: jane@doe.com / next-intl",
@@ -25,5 +27,9 @@
   },
   "ProfilePage": {
     "title": "Profil"
+  },
+  "ClientPage": {
+    "count": "Sayı",
+    "increment": "Arttır"
   }
 }
