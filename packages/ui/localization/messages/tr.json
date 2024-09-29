@@ -5,6 +5,8 @@
     "profile": "Profil"
   },
   "HomePage": {
+    "project_1":"Bu Project-1",
+    "project_2":"Bu Project-2",
     "title": "Anasayfa"
   },
   "Navbar": {

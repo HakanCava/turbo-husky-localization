@@ -27,14 +27,38 @@ export const Navbar = () => {
         alignItems: "center",
       }}
     >
-      <Flex sx={{ gap: "20px", backgroundColor: "#CFCFCF", padding: "5px" }}>
-        <Link href="/">{t("link-1")}</Link>
-        <Link href="/client-page">{t("link-2")}</Link>
+      <Flex sx={{ gap: "20px", padding: "5px" }}>
+        <Link
+          sx={{
+            backgroundColor: "#CFCFCF",
+            padding: "5px",
+            borderRadius: "5px",
+          }}
+          href="/"
+        >
+          {t("link-1")}
+        </Link>
+        <Link
+          sx={{
+            backgroundColor: "#CFCFCF",
+            padding: "5px",
+            borderRadius: "5px",
+          }}
+          href="/client-page"
+        >
+          {t("link-2")}
+        </Link>
       </Flex>
-      <Box>
-        <Select defaultValue={locale} onChange={onChange}>
-          <option label={t("en")} value="en" />
-          <option label={t("tr")} value="tr" />
+      <Box
+        sx={{ backgroundColor: "#CFCFCF", borderRadius: "5px", border: "none" }}
+      >
+        <Select
+          sx={{ border: "none" }}
+          defaultValue={locale}
+          onChange={onChange}
+        >
+          <option style={{border: "none"}} label={t("en")} value="en" />
+          <option style={{border: "none"}} label={t("tr")} value="tr" />
         </Select>
       </Box>
     </Flex>

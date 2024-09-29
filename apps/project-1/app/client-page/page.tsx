@@ -5,7 +5,7 @@ import { Box, Button, Flex, Heading } from "@chakra-ui/react";
 
 const ClientPage = () => {
   const [count, setCount] = useState(0);
-  const t = useTranslations("ClientPage");
+  const t = useTranslations();
 
   return (
     <Flex
@@ -15,12 +15,12 @@ const ClientPage = () => {
         justifyContent: "center",
       }}
     >
-      <Heading>ClientPage</Heading>
+      <Heading>{t("Navbar.link-2")}</Heading>
       <Box>
-        {t("count")}: {count}
+        {t("ClientPage.count")}: {count}
       </Box>
       <Button onClick={() => setCount((prev) => prev + 1)}>
-        {t("increment")}
+        {t("ClientPage.increment")}
       </Button>
     </Flex>
   );

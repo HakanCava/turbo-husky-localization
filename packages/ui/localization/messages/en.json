@@ -5,6 +5,8 @@
     "profile": "Profile"
   },
   "HomePage": {
+    "project_1":"This is Project-1",
+    "project_2":"This is Project-2",
     "title": "Home"
   },
   "Navbar": {
